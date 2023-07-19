@@ -17,13 +17,14 @@
 
 .container{
   width: 80%;
-  max-width: 1200px%;
+  max-width: 1000px;
   margin: 25px auto;
 }
 
 .flex{
   display: flex;
 }
+
 
 .topbar .container{
   justify-content: space-between;
@@ -32,7 +33,7 @@
 ul{
   list-style:none;
 }
-a,.discount-red,.discount-green{
+a,.discount-red,.discount-green,footer{
     color: white;
 }
 a{
@@ -54,12 +55,13 @@ main{
 }
 .card-container{
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+
 }
 .card{
   padding: 40px 15px 0 0;
-   position: relative;
- cursor: pointer;
+  position: relative;
+  cursor: pointer;
 
 }
 .card img{
@@ -106,3 +108,17 @@ bottom: 100px;
 }
 
 /* /main */
+
+/* footer */
+
+footer{
+  background-color: #1a1a1a;
+  height: 100px;
+}
+.second-text{
+  float: left;
+}
+.social{
+  float: right;
+}
+/* /footer */
