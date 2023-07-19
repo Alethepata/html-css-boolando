@@ -10,13 +10,14 @@
   width: 100%;
   height: 80px;
   position: fixed;
+  top: 0;
   z-index: 999;
   box-shadow: 0 0 10px grey;
 }
 
 .container{
   width: 80%;
-  max-width: 1200px;
+  max-width: 1200px%;
   margin: 25px auto;
 }
 
@@ -31,16 +32,12 @@
 ul{
   list-style:none;
 }
-
+a,.discount-red,.discount-green{
+    color: white;
+}
 a{
   margin-right: 10px;
-  color: white;
-
-}
-
-ul li a{
   text-decoration: none;
-  color: white;
 
 }
 
@@ -48,3 +45,64 @@ ul li a{
   width: 100px;
   height: 25px;
 }
+
+/* /footer */
+
+/* main */
+main{
+  margin-top: 80px ;
+}
+.card-container{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  padding: 40px 15px 0 0;
+   position: relative;
+ cursor: pointer;
+
+}
+.card img{
+  width: 300px;
+  height: 380;  
+
+}
+.discount-red,.discount-green{
+  padding: 5px; 
+  font-size: 14px;
+}
+.discount-red{
+  background-color: red;
+}
+.discount-green{
+  background-color: green;
+}
+.discount{
+position: absolute;
+bottom: 100px;
+}
+.heart{
+  position: absolute;
+  bottom: 440px;
+  left: 270px;
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.text span{
+  display: block;
+}
+.text span:first-child{
+  font-size: 12px;
+}
+.text span:last-child,.prezzo span:first-child{
+  font-weight: 1000;
+}
+.prezzo span:first-child{
+  color: red;
+}
+.line-through{
+  text-decoration: line-through;
+}
+
+/* /main */
