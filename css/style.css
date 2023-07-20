@@ -10,7 +10,7 @@ body{
 
 .topbar{
   background-color: #ff6900;
-  width: 100%;
+  width: 100%;  /* si può dare anche left:0 e right:0 */
   height: 80px;
   position: fixed;
   top: 0;
@@ -63,15 +63,27 @@ main{
 }
 .card{
   padding: 40px 15px 0 0;
-  position: relative;
   cursor: pointer;
 
+}
+.contenuto-card{
+  position: relative;
 }
 .card img{
   width: 300px;
   height: 380;  
 
 }
+.second-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.image-card:hover .second-img {
+  display: block;
+}
+
 .discount-red,.discount-green{
   padding: 5px; 
   font-size: 14px;
@@ -84,12 +96,12 @@ main{
 }
 .discount{
 position: absolute;
-bottom: 100px;
+bottom: 30px;
 }
 .heart{
   position: absolute;
-  bottom: 440px;
-  left: 270px;
+  top: 0;
+  right: 0;
   background-color: white;
   padding: 5px 10px;
   font-size: 20px;
